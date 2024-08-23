@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hra v kostky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #kostky, #kostky_pocitac {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .vysledek {
+            font-weight: bold; /* Text bude tučný */
+            font-size: 1.2em;
+        }
+        .vitez {
+            color: green; /* Barva vítěze */
+        }
+        .porazeny {
+            color: red; /* Barva poraženého */
+        }
+    </style>
+    
+    </style>
+    
+    
+</head>
+<body>
+    <h1>Hra v kostky</h1>
+    <div><strong>HRÁČ</strong></div>
+    <div id="kostky">
+        <img id="hrac_kostka1" src="kostka1.png" alt="Kostka hráče 1">
+        <img id="hrac_kostka2" src="kostka1.png" alt="Kostka hráče 2">
+    </div>
+    <div><strong>POČÍTAČ</strong></div>
+    <div id="kostky_pocitac">
+        <img id="pocitac_kostka1" src="kostka1.png" alt="Kostka počítače 1">
+        <img id="pocitac_kostka2" src="kostka1.png" alt="Kostka počítače 2">
+    </div>
+    <button id="hodButton" onclick="hra()">Hod kostkami</button>
+    <button id="noveHraButton" onclick="noveHra()" style="display: none;">Nová hra</button>
+    <p id="vysledek">Klikněte na tlačítko pro hod kostkami.</p>
+    <p id="skore">Hráč: 0 | Počítač: 0</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
